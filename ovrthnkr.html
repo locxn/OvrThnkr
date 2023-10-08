@@ -2,14 +2,14 @@
 <html>
   <head>
     <title>OvrThnkr</title>
-    <link rel="stylesheet" href="styles/ovrthnkr.css">
+    <link rel="stylesheet" href="ovrthnkr.css">
     <link rel="stylesheet" href="./node_modules/nes.css/css/nes.min.css">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
     <script src="ovrthnkr.js"></script>
   </head>
 
-  <body background="images/background.png">
+  <body background="background.png">
     <div class="startingpage" id="startingpage">
       <div class="center" style="color: white; -webkit-text-stroke-width: 5px; -webkit-text-stroke-color: black;">OVRTHNKR</div>
       <br>
@@ -24,9 +24,9 @@
 
     <div class="startingpage" id="promptingpage">
       <div class="images" id="promptimages">
-        <img src="images/loc.png" id = "loc">
-        <img src="images/alan.png">
-        <img src="images/justin.png">
+        <img src="loc.png" id = "loc">
+        <img src="alan.png">
+        <img src="justin.png">
       </div>
       <br>
       <form id="input_form" style="opacity: 0%;" class="nes-field" onsubmit="setInput();return false">
@@ -42,11 +42,11 @@
           <div class="nes-balloon from-right" style="width: 80%;">
             <p id="goodmessage"></p>
           </div>
-          <img class="rightimage" src="images/justin.png"></i>
+          <img class="rightimage" src="justin.png"></i>
         </section>
 
         <section class="message -left">
-          <img class="leftimage" src="images/alan.png"></i>
+          <img class="leftimage" src="alan.png"></i>
           <!-- Balloon -->
           <div class="nes-balloon from-left" style="width: 80%;">
             <p id="neutralmessage"></p>
@@ -58,7 +58,7 @@
           <div class="nes-balloon from-right" style="width: 80%;">
             <p id="badmessage"></p>
           </div>
-          <img class="rightimage" src="images/loc.png"></i>
+          <img class="rightimage" src="loc.png"></i>
         </section>
       </section>
     </section>
