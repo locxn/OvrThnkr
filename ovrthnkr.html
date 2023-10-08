@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OvrThnkr</title>
+    <link rel="stylesheet" href="styles/ovrthnkr.css">
+    <link rel="stylesheet" href="./node_modules/nes.css/css/nes.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <script src="ovrthnkr.js"></script>
+  </head>
+
+  <body background="images/background.png">
+    <div class="startingpage" id="startingpage">
+      <div class="center" style="color: white; -webkit-text-stroke-width: 5px; -webkit-text-stroke-color: black;">OVRTHNKR</div>
+      <br>
+      <div style="text-align: center; color: white; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: black;">What's happening?</div>
+      <br>
+      <section style="text-align: center;">
+        <a class="nes-btn" onclick="setSelected(1)">Action</a>
+        <a class="nes-btn" onclick="setSelected(2)">Curious</a>
+        <a class="nes-btn" onclick="setSelected(3)">Mood</a>
+      </section>
+    </div>
+
+    <div class="startingpage" id="promptingpage">
+      <div class="images" id="promptimages">
+        <img src="images/loc.png" id = "loc">
+        <img src="images/alan.png">
+        <img src="images/justin.png">
+      </div>
+      <br>
+      <form id="input_form" style="opacity: 0%;" class="nes-field" onsubmit="setInput();return false">
+        <label id="input_label" for="input_field" style="color: white; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: black;"></label>
+        <input type="text" id="input_field" class="nes-input">
+      </form>
+    </div>
+
+    <section id="resultspage" class="nes-container" style="display: none; border: none;">
+      <section class="message-list">
+        <section class="message -right">
+          <!-- Balloon -->
+          <div class="nes-balloon from-right" style="width: 80%;">
+            <p id="goodmessage"></p>
+          </div>
+          <img class="rightimage" src="images/justin.png"></i>
+        </section>
+
+        <section class="message -left">
+          <img class="leftimage" src="images/alan.png"></i>
+          <!-- Balloon -->
+          <div class="nes-balloon from-left" style="width: 80%;">
+            <p id="neutralmessage"></p>
+          </div>
+        </section>
+    
+        <section class="message -right">
+          <!-- Balloon -->
+          <div class="nes-balloon from-right" style="width: 80%;">
+            <p id="badmessage"></p>
+          </div>
+          <img class="rightimage" src="images/loc.png"></i>
+        </section>
+      </section>
+    </section>
+
+    <a id="homebutton" class="nes-btn" href="#" style="opacity: 0%; position: absolute; left: 10px; bottom: 10px;" onclick="location.reload();">home</a>
+  </body>
+</html>
