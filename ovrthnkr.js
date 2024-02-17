@@ -49,9 +49,9 @@ async function fetchData(message) {
         text = data.split("\n");
         console.log(text);
 
-        good = text[2].split(". ")[1];
-        neutral = text[3].split(". ")[1];
-        bad = text[4].split(". ")[1];
+        good = text[2].split(") ")[1];
+        neutral = text[3].split(") ")[1];
+        bad = text[4].split(") ")[1];
         // document.getElementById("goodmessage").innerHTML = good;
         // document.getElementById("neutralmessage").innerHTML = neutral;
         // document.getElementById("badmessage").innerHTML = bad;
