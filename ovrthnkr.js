@@ -13,7 +13,7 @@ const apiEndpoint = 'https://8avnl9cb55.execute-api.us-east-1.amazonaws.com/defa
 
 // IMPORTANT
 //let user = "get molested";    // GET USER INPUT FROM TEXT BOX
-let input1 = `I am about to ${userInput} \nGive 3 sentences in the 2nd person with 20 words or less on what may happen in this situation, list them in numerical order. The first one should be a positive outcome in a cheerful, helpful tone, the second should be neutral, and the last should be a negative outcome in an hostile, sarcastic tone. Only include the sentences and 3 lines`;
+let input1 = `I am about to ${userInput} \nGive 3 sentences in the 2nd person with 20 words or less on what may happen in this situation. The first one should be a positive outcome in a cheerful, helpful tone, the second should be neutral, and the last should be a negative outcome in an hostile, sarcastic tone. Only include the sentences and 3 lines`;
 let input2 = `What if I ${userInput} \nGive 3 sentences in the 2nd person with 20 words or less on what may happen in this situation. The first one should be a positive outcome in a cheerful, helpful tone, the second should be neutral, and the last should be a negative outcome in an hostile, sarcastic tone. Only include the sentences and 3 lines`;
 let input3 = `I feel ${userInput} \nGive 3 sentences in the 2nd person with 20 words or less on what may happen in this situation. The first one should be a positive outcome in a cheerful, helpful tone, the second should be neutral, and the last should be a negative outcome in an hostile, sarcastic tone. Only include the sentences and 3 lines`;
 
