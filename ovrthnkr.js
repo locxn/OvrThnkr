@@ -8,7 +8,7 @@ var bad ="NA";
 var inputMessage = "NA";
 
 // apiEndPoint to connect with AWS Lamda
-const apiEndpoint = 'https://8avnl9cb55.execute-api.us-east-1.amazonaws.com/default/OvrThnkr';
+const apiEndpoint = // apiEndpoint;
 
 
 // IMPORTANT
